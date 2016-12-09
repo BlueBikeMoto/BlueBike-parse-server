@@ -12,11 +12,11 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-  databaseURI: databaseUri || 'mongodb://heroku_8zbrr3zx:jakedqh8dq8o30ieqrh4r4tcqm@ds159377.mlab.com:59377/heroku_8zbrr3zx',
+  databaseURI: databaseUri || 'mongodb://heroku_gmgbt6xw:jnpu2uabo5hve9ovgnovm0hh7g@ds113678.mlab.com:13678/heroku_gmgbt6xw',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
-  appId: process.env.APP_ID || 'eas-staging',
-  masterKey: process.env.MASTER_KEY || 'easMasterKey', //Add your master key here. Keep it secret!
-  serverURL: process.env.SERVER_URL || 'http://eas-staging.herokuapp.com/parse',  // Don't forget to change to https if needed
+  appId: process.env.APP_ID || 'JS2DvtHb2PoywvhfConYloUlh2UgDO1WH9JR6tLi',
+  masterKey: process.env.MASTER_KEY || 'ow4KMT3yC62wnQzKcw1f0WsJbQ2T0epZDnpIj1fW', //Add your master key here. Keep it secret!
+  serverURL: process.env.SERVER_URL || 'http://bluebike.herokuapp.com/parse',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   }
