@@ -12,11 +12,11 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-  databaseURI: databaseUri || 'mongodb://matte:matte.mlab.com:27948/heroku_ld21m39n',
+  databaseURI: databaseUri || 'mongodb://heroku_7gz64sm2:fvoqa7pfbnp9rqhblidjh7ujpq@ds119508.mlab.com:19508/heroku_7gz64sm2',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'JS2DvtHb2PoywvhfConYloUlh2UgDO1WH9JR6tLi',
   masterKey: process.env.MASTER_KEY || 'ow4KMT3yC62wnQzKcw1f0WsJbQ2T0epZDnpIj1fW', //Add your master key here. Keep it secret!
-  serverURL: process.env.SERVER_URL || 'http://bluebike.herokuapp.com/parse',  // Don't forget to change to https if needed
+  serverURL: process.env.SERVER_URL || 'https://bluebikeprova.herokuapp.com/',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   }
